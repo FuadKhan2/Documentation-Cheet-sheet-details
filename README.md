@@ -193,3 +193,43 @@ git pull origin main --rebase
 **No need for a pull request** unless you are working on a separate feature branch and want to merge those changes into the `main` branch!
 
 **Done! 🎉** Now, both you and your teammate can work directly on the **main** branch without issues. 🚀
+
+
+# Steps for Your Teammate to Add You as a Collaborator to a Public Repository:
+
+1. **Go to the Repository**:
+   - Your teammate needs to navigate to the **GitHub repository** they want to grant you access to.
+
+2. **Open the Settings**:
+   - On the right side of the repository page, your teammate should click on the **Settings** tab (this option is only visible to repository owners and collaborators).
+
+3. **Navigate to the Collaborators & Teams Section**:
+   - In the settings menu, on the left-hand side, your teammate should scroll down and find the **Manage Access** section.
+   - They need to click on **Collaborators & teams**.
+
+4. **Invite a Collaborator**:
+   - Under the **Collaborators** section, there is an **Invite a collaborator** button. Your teammate should click it.
+   
+5. **Add Your GitHub Username**:
+   - In the invite field, your teammate will enter your **GitHub username**.
+   - Once your username appears in the search results, they can click on your profile and send you an invitation.
+
+6. **Accept the Invitation**:
+   - You will receive an email notification and a notification on GitHub asking you to accept the collaboration invitation.
+   - Once you accept the invitation, you will have **write access** to the repository, meaning you can push changes directly to it.
+
+### After Being Added as a Collaborator:
+- Once you’ve accepted the invitation, you can directly **push changes** to the repository without the need to fork it.
+- You can follow these Git commands to add, commit, and push your changes:
+   ```sh
+   git add .
+   git commit -m "Your commit message"
+   git push origin main  # or the appropriate branch you're working on
+   ```
+
+---
+
+### Summary:
+- Your teammate needs to add you as a collaborator in the **repository settings**.
+- You’ll receive an invitation to accept, after which you’ll have **write access** to the repository and can push directly to it.
+
