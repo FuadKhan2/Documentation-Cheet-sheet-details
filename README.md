@@ -176,5 +176,20 @@ git pull origin main --rebase
 4️⃣ **If many changes are expected, use feature branches** to avoid conflicts.  
 
 ---
+### Workflow Summary:
+- **Clone the repository:** You’ve already done this with `git clone`.
+- **Pull latest changes:** Run `git pull origin main` before making your own changes to make sure you have the most up-to-date code.
+- **Make changes:** Modify the code and save your changes.
+- **Commit and push:** After making changes, `git add .`, `git commit`, and `git push origin main`.
+
+---
+
+### What if There Are Conflicts?
+- If someone else has already pushed changes to `main` while you were working, Git might report a **merge conflict**.
+- In this case, you will need to resolve the conflicts manually in VS Code (or another editor) before pushing your changes.
+
+---
+
+**No need for a pull request** unless you are working on a separate feature branch and want to merge those changes into the `main` branch!
 
 **Done! 🎉** Now, both you and your teammate can work directly on the **main** branch without issues. 🚀
