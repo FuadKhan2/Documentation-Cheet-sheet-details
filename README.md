@@ -134,6 +134,15 @@ If you face merge conflicts, Git will highlight them in the files.
 If both developers want to work directly on the **main** branch in GitHub, follow these steps to avoid conflicts and maintain a smooth workflow:  
 
 ---
+## **✅ 2️⃣ Always Pull the Latest Code Before Working**
+Before making any changes, **sync** your local main branch with the latest version from GitHub:
+
+```sh
+git pull origin main
+```
+This ensures that you have the most recent updates made by other team members.
+
+---
 
 
 ## **✅ 5️⃣ Handling Merge Conflicts (If Any)**
