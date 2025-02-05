@@ -233,3 +233,83 @@ git pull origin main --rebase
 - Your teammate needs to add you as a collaborator in the **repository settings**.
 - You’ll receive an invitation to accept, after which you’ll have **write access** to the repository and can push directly to it.
 
+
+
+
+Yes! To ensure a smooth collaboration while both of you are working on the **main** branch, follow this workflow:  
+
+---
+
+### **✅ Steps for Both of You to Push Updates Without Conflicts**  
+
+### **1️⃣ Pull the Latest Changes Before Making Any Updates**
+Before you start making changes, **always pull the latest version** of the `main` branch to avoid conflicts:  
+```sh
+git pull origin main
+```
+This ensures your local copy is **up to date** with your teammate’s changes.  
+
+---
+
+### **2️⃣ Make Your Changes Locally**  
+After pulling, update your file (**`eda.py`**) and save your changes.
+
+---
+
+### **3️⃣ Add & Commit Your Changes**  
+Once you’re done, stage and commit your changes:  
+```sh
+git add eda.py  # Add only the modified file
+git commit -m "Updated EDA script with new analysis"
+```
+
+---
+
+### **4️⃣ Pull Again Before Pushing**
+Before pushing, **pull again** to check if your teammate has pushed anything new:  
+```sh
+git pull origin main
+```
+- If no new updates: You can **push safely**.  
+- If there are updates: Git will **merge** them automatically, or you may need to manually resolve conflicts.  
+
+---
+
+### **5️⃣ Push Your Changes**
+If everything looks good, push your changes to GitHub:  
+```sh
+git push origin main
+```
+This updates the repository with your changes.
+
+---
+
+### **💡 What If There’s a Merge Conflict?**  
+If both of you edited the **same part** of a file, Git will show a **merge conflict** after pulling.  
+To fix it:
+1. Open the conflicting file in VS Code.
+2. Git will show conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`).
+3. Manually **choose which changes to keep**.
+4. Stage the fixed file:
+   ```sh
+   git add eda.py
+   ```
+5. Commit the resolved changes:
+   ```sh
+   git commit -m "Resolved merge conflict in eda.py"
+   ```
+6. Push again:
+   ```sh
+   git push origin main
+   ```
+
+---
+
+### **🎯 Summary**
+✅ **Always pull before making changes**  
+✅ **Pull again before pushing**  
+✅ **Resolve conflicts if necessary**  
+✅ **Push your updates after merging the latest changes**  
+
+This process ensures **no conflicts** and a smooth workflow! 🚀 Let me know if you have any doubts. 😊
+
